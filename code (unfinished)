@@ -3,24 +3,24 @@
 
 using namespace std;
 
-// Function asks user to input if their colorblind or not and their race.
- void inputCB(double &genderans, double &cbans);
+// Function asks user to input if the males colorblind or not.
+ void inputCB(double &maleans, double &cbans);
 
  //Function continues code scenario if male is chosen
- void MALECHOSEN(double &cbans);
+ void MALENORM(double &cbans);
 
 //Function continues code scenario if female is chosen
- void FEMALECHOSEN();
+ void MALECB();
 
 int main()
 {
 
     //Defined variables:
-    double genderans, cbans;
+    double maleans, cbans;
 
-    cout<< "\n                              Welcome to Martinothegoat's Colorblind Genetics Program.\n\n     This program will use your genetic data to figure out the possible inheritance of your children.\n\n                                      Please start by identifying yourself!"<<endl;
-    cout<<"       __________________________________________________________________________________________________________"<<endl;
-    inputCB(genderans, cbans);
+    cout<< "\n                              Welcome to Martinothegoat's Colorblind Genetics Program.\n\n                This program will use genetic data to figure out the possible inheritance of children.\n\n                 Please start by selecting the options and we'll create the possible scenarios for you!"<<endl;
+     cout<<"       __________________________________________________________________________________________________________"<<endl;
+    inputCB(maleans, cbans);
 
     return 0;
 }
@@ -28,11 +28,12 @@ int main()
 
 
 
-void inputCB(double &genderans, double &cbans){
+void inputCB(double &maleans, double &cbans){
     cout << "\n                                      *Use 1 and 2 to answer initial questions*" <<endl;
-    cout << "\n                                         First of all, what is your gender?" <<endl;
-    cout << "     (1) Male\n     (2)Female" <<endl;
-    cin >> genderans;
+    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
+    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+
+    cin >> maleans;
 
 while (true){
  //This determines allowed integers or not
@@ -43,24 +44,24 @@ while (true){
             }
 
 
-        if (genderans == 1){
+        if (maleans == 1){
 
-        cout << "\nSelected Male" <<endl;
-        MALECHOSEN(cbans);
+        cout << "\nSelected Normal Vision" <<endl;
+        MALENORM(cbans);
         break;
     }
-    else if (genderans == 2){
+    else if (maleans == 2){
 
-        cout << "\nSelected Female" <<endl;
-        FEMALECHOSEN();
+        cout << "\nSelected Colorblindness" <<endl;
+        MALECB();
         break;
     }
 
 else {
-            cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THE QUESTION*" <<endl;
-    cout << "\n                                         First of all, what is your gender?" <<endl;
-    cout << "     (1) Male\n     (2) Female" <<endl;
-    cin >> genderans;
+             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
+    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+    cin >> maleans;
 
 
     }
@@ -68,10 +69,10 @@ else {
 
     }
 
-    void MALECHOSEN(double &cbans){
+    void MALENORM(double &cbans){
 
 
-        cout <<"\n                                         Okay, state your colorblind trait." <<endl;
+        cout <<"\n                                         Okay, now state the female's genetic eye condition. A third option is represented for the chance of you know she is a silent carrier..." <<endl;
         cout << "     (1) Colorblind\n     (2) Not Colorblind" <<endl;
          cin>> cbans;
 
@@ -107,4 +108,6 @@ else {
 
     }
     }
-    void FEMALECHOSEN(){}
+    void MALECB(){}
+
+    //DONT KEEP IN FINAL VERSION, FINISH PUNNET SQUARE AND CODE FOR FEMALE.
