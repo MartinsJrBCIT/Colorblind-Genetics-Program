@@ -37,11 +37,21 @@ void inputCB(double &maleans, double &cbans){
 
 while (true){
  //This determines allowed integers or not
-            if (cin.fail()){
-                cin.clear();
-                cin.ignore(10000, '\n');
 
-            }
+
+
+            if(maleans != 1 && maleans != 2 )( cin.fail());{
+
+
+             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
+    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+    cin.clear();
+    cin.ignore(10000, '\n');
+    cin >> maleans;
+
+
+    }
 
 
         if (maleans == 1){
@@ -57,14 +67,6 @@ while (true){
         break;
     }
 
-else {
-             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
-    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
-    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
-    cin >> maleans;
-
-
-    }
 }
 
     }
@@ -72,17 +74,25 @@ else {
     void MALENORM(double &cbans){
 
 
-        cout <<"\n                                         Okay, now state the female's genetic eye condition. A third option is represented for the chance of you know she is a silent carrier..." <<endl;
+        cout <<"\n                                  Okay, now state the female's genetic eye condition. \n\n                             A third option is represented for the chance of you know she is a silent carrier..." <<endl;
         cout << "     (1) Colorblind\n     (2) Not Colorblind" <<endl;
          cin>> cbans;
 
          while(true){
 
-                    if (cin.fail()){
-                cin.clear();
-                cin.ignore(10000, '\n');
+                    if(cbans != 1 && cbans != 2) (cin.fail());{
 
-            }
+
+             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         State the female's genetic eye condition..." <<endl;
+    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+    cin.clear();
+    cin.ignore(10000, '\n');
+    cin >> cbans;
+
+
+    }
+
 
 
         if (cbans == 1){
