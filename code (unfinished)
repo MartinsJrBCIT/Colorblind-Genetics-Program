@@ -10,7 +10,26 @@ using namespace std;
  void MALENORM(double &cbans);
 
 //Function continues code scenario if female is chosen
- void MALECB();
+ void MALECB(double &cbans);
+
+ //Function for a punnett square where the male & female have normal vision
+ void PS1();
+
+ //Function for a punnett square where the male has normal vision but the female is colorblind
+ void PS2();
+
+ //Function for a punnett square where the male has normal vision but the female is a silent carrier
+ void PS3();
+
+ //Function for a punnett square where the male is colorblind but the female has normal vision
+ void PS4();
+
+ //Function for a punnett square where the male and female is colorblind
+ void PS5();
+
+ //Function for a punnett square where the male is colorblind but the female is a silent carrier
+ void PS6();
+
 
 int main()
 {
@@ -40,18 +59,14 @@ while (true){
 
 
 
-            if(maleans != 1 && maleans != 2 )( cin.fail());{
-
-
-             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
-    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
-    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+            if (maleans != 1 && maleans != 2) {
     cin.clear();
     cin.ignore(10000, '\n');
+    cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         First, state the male's genetic eye condition..." <<endl;
+    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
     cin >> maleans;
-
-
-    }
+}
 
 
         if (maleans == 1){
@@ -63,7 +78,7 @@ while (true){
     else if (maleans == 2){
 
         cout << "\nSelected Colorblindness" <<endl;
-        MALECB();
+        MALECB(cbans);
         break;
     }
 
@@ -75,49 +90,185 @@ while (true){
 
 
         cout <<"\n                                  Okay, now state the female's genetic eye condition. \n\n                             A third option is represented for the chance of you know she is a silent carrier..." <<endl;
-        cout << "     (1) Colorblind\n     (2) Not Colorblind" <<endl;
+        cout << "     (1) Not Colorblind\n     (2) Colorblind\n     (3) Silent Carrier" <<endl;
          cin>> cbans;
 
          while(true){
 
-                    if(cbans != 1 && cbans != 2) (cin.fail());{
-
-
-             cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
-    cout << "\n                                         State the female's genetic eye condition..." <<endl;
-    cout << "     (1) Normal Vision\n     (2) Colorblind" <<endl;
+                    if (cbans != 1 && cbans != 2 && cbans != 3) {
     cin.clear();
     cin.ignore(10000, '\n');
+    cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         State the female's genetic eye condition..." <<endl;
+    cout <<  "     (1) Not Colorblind\n     (2) Colorblind\n     (3) Silent Carrier" <<endl;
     cin >> cbans;
-
-
-    }
+}
 
 
 
         if (cbans == 1){
 
-        cout << "Selected Colorblind" <<endl;
-
+        cout << "Selected Not Colorblind" <<endl;
+        PS1();
         break;
     }
     else if (cbans == 2){
 
-        cout << "Selected Not Colorblind" <<endl;
-
+        cout << "Selected Colorblind" <<endl;
+        PS2();
         break;
     }
 
-    else {
-            cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THE QUESTION*" <<endl;
-    cout << "\n                                         Okay, state your colorblind trait." <<endl;
-    cout << "     (1) Colorblind\n     (2) Not Colorblind" <<endl;
+    else if (cbans == 3){
+
+        cout << "Selected Silent Carrier" <<endl;
+        PS3();
+        break;
+    }
+
+
+
+
+    }
+    }
+
+    void PS1(){
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+    }
+
+    void PS2 (){
+
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+    }
+
+    void PS3(){
+
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+
+    }
+    void MALECB(double &cbans){cout <<"\n                                  Okay, now state the female's genetic eye condition. \n\n                             A third option is represented for the chance of you know she is a silent carrier..." <<endl;
+        cout << "     (1) Not Colorblind\n     (2) Colorblind\n     (3) Silent Carrier" <<endl;
+         cin>> cbans;
+
+         while(true){
+
+                    if (cbans != 1 && cbans != 2 && cbans != 3) {
+    cin.clear();
+    cin.ignore(10000, '\n');
+    cout << "\n                                      *USE 1 AND 2 ONLY TO ANSWER THESE QUESTIONS*" <<endl;
+    cout << "\n                                         State the female's genetic eye condition..." <<endl;
+    cout <<  "     (1) Not Colorblind\n     (2) Colorblind\n     (3) Silent Carrier" <<endl;
     cin >> cbans;
-         }
+}
 
 
+
+        if (cbans == 1){
+
+        cout << "Selected Not Colorblind" <<endl;
+        PS4();
+        break;
+    }
+    else if (cbans == 2){
+
+        cout << "Selected Colorblind" <<endl;
+        PS5();
+        break;
+    }
+
+    else if (cbans == 3){
+
+        cout << "Selected Silent Carrier" <<endl;
+        PS6();
+        break;
     }
     }
-    void MALECB(){}
+    }
+
+    void PS4(){
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+    }
+
+    void PS5(){
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+
+    }
+
+    void PS6(){
+        cout << "\n   Okay, heres the punnett square:\n"<<endl;
+        cout <<" --------------------------------"<<endl;
+        cout <<"| PUNNET  |           |          |"<<endl;
+        cout <<"| SQUARE  |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|_________|___________|__________|"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<"|         |           |          |"<<endl;
+        cout <<" -------------------------------- "<<endl;
+        cout <<"\n    Now here's a Phenotype for you to easily digest the information given:\n"<<endl;
+
+    }
 
     //DONT KEEP IN FINAL VERSION, FINISH PUNNET SQUARE AND CODE FOR FEMALE.
