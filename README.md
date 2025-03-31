@@ -1,4 +1,4 @@
-# Colorblind-Genetics-Program-Unfinished-
+# Colorblind-Genetics-Program
 This program, using functions, models the genetic inheritance of color blindness.  
 
 The program should output a punnett square, genotype results, and phenotype results.
