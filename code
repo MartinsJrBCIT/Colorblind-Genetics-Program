@@ -135,7 +135,7 @@ void MALENORM(double &cbans) {
 void PS1() {
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    XB     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
@@ -157,7 +157,7 @@ void PS2 () {
 
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    XB     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
@@ -179,7 +179,7 @@ void PS3() {
 
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    XB     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
@@ -240,7 +240,7 @@ void MALECB(double &cbans) {
 void PS4() {
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    Xb     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
@@ -261,7 +261,7 @@ void PS4() {
 void PS5() {
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    Xb     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
@@ -283,7 +283,7 @@ void PS5() {
 void PS6() {
 	cout << "\n   Okay, heres the punnett square:\n"<<endl;
 	cout <<" --------------------------------"<<endl;
-	cout <<"| PUNNET  |           |          |"<<endl;
+	cout <<"| PUNNETT |           |          |"<<endl;
 	cout <<"| SQUARE  |    Xb     |    Y     |"<<endl;
 	cout <<"|_________|___________|__________|"<<endl;
 	cout <<"|         |           |          |"<<endl;
